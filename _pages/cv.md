@@ -27,7 +27,7 @@ Research experience
 * **Graduate Research Assistant**, Research Cores Program, New Mexico State University, Sep 2025 – present
   * Doctoral research on synthetic population generation and statistical data synthesis, integrating survey data with population-level information.
   * Applying calibration and validation techniques and evaluating how well synthetic populations preserve key statistical relationships.
-  * Developing training guides and documentation for the Discovery HPC cluster.
+  * Developed training guides and documentation for the Discovery HPC cluster.
 
 * **PhD Research Associate**, The University of Texas at El Paso, Jan 2025 – Aug 2025
   * *GET PHIT* (Gaining Equity in Training for Public Health Informatics and Technology): curriculum development, training modules, and outreach; mentored bootcamp students on capstone projects.
