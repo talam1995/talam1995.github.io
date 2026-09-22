@@ -22,10 +22,10 @@ repository               : "https://talam1995.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  avatar: "Tamim-Alam_Photo.jpg"
+  avatar: "tamim_alam.png"
   name: "Tamim Alam"
   bio: "PhD student in Computer Science at New Mexico State University. My research interests include Human/Social Digital Twins, synthetic population generation, statistical data synthesis, survey calibration, and causal modeling."
-  location: "Las Cruces, New Mexico, USA"
+  location: "New Mexico, USA"
   employer         : "New Mexico State University"
   uri              : # URL
   email            : "talam@nmsu.edu" 
