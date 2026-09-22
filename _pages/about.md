@@ -26,6 +26,16 @@ My research aims to create realistic computational representations of human popu
 
 My doctoral research investigates methodologies for constructing high-fidelity synthetic populations from survey and population-level data. The goal is to develop validated computational populations that preserve important statistical relationships and enable causal intervention analysis within digital twin environments.
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+I work as a Graduate Research Assistant in the Research Cores Program at NMSU under the supervision of [Dr. Amy E. Wagler](mailto:awagler@nmsu.edu), where I also develop training guides and documentation for the Discovery HPC cluster.
+
+## Background
+
+Before joining NMSU, I earned an M.S. in Statistics and Data Science from The University of Texas at El Paso (GPA 3.91/4.00), where my [thesis](https://scholarworks.utep.edu/open_etd/4219/) on D-optimal joint best linear unbiased predictors for progressively Type-II censored order statistics was supported by the NSF LEAPS-MPS project and nominated for the College of Science best thesis award. I hold a B.S. in Statistics from the University of Dhaka, and spent three years as an Actuarial Associate at the Syngenta Foundation for Sustainable Agriculture developing weather index insurance products in Bangladesh.
+
+## Education
+
+- **Ph.D. in Computer Science**, New Mexico State University, 2025 – present
+- **M.S. in Statistics and Data Science**, The University of Texas at El Paso, 2024
+- **B.S. in Statistics**, University of Dhaka, Bangladesh, 2019
+
+See my [CV](/cv/) for full details, or view the [printable resume](/resume/).
