@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tamim Alam | CV</title>
+<meta name="description" content="Academic CV of Tamim Alam, PhD student in Computer Science at New Mexico State University. Research in synthetic population generation, statistical modeling, and causal inference.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --paper: #ffffff;
+    --ink: #1d1f23;
+    --muted: #5d6470;
+    --rule: #e3e0d8;
+    --accent: #8c1d40;
+    --accent-soft: #f6ebee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15171a; --paper: #1c1f23; --ink: #e8e6e1; --muted: #a2a8b2;
+      --rule: #30343a; --accent: #e28aa6; --accent-soft: #2b1f24;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15171a; --paper: #1c1f23; --ink: #e8e6e1; --muted: #a2a8b2;
+    --rule: #30343a; --accent: #e28aa6; --accent-soft: #2b1f24;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 "Source Serif 4", Georgia, serif;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .page {
+    max-width: 860px; margin: 40px auto; padding: 56px 64px;
+    background: var(--paper); border: 1px solid var(--rule); border-radius: 6px;
+  }
+  header { border-bottom: 2px solid var(--accent); padding-bottom: 22px; margin-bottom: 8px; }
+  h1 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 6px; letter-spacing: .01em; }
+  .role { font-size: 1.1rem; color: var(--muted); margin: 0 0 14px; }
+  .contact { display: flex; flex-wrap: wrap; gap: 8px 18px; font: 500 .9rem/1.4 Inter, system-ui, sans-serif; }
+  .contact a { display: inline-flex; align-items: center; gap: 6px; }
+  .contact svg { width: 15px; height: 15px; fill: currentColor; flex: none; }
+  .actions { margin-top: 14px; font: 500 .85rem Inter, system-ui, sans-serif; }
+  .actions button {
+    font: inherit; color: var(--accent); background: var(--accent-soft);
+    border: 1px solid transparent; border-radius: 4px; padding: 5px 12px; cursor: pointer;
+  }
+  section { margin-top: 30px; }
+  h2 {
+    font: 600 .8rem/1 Inter, system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--accent); margin: 0 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 10px; }
+  .entry { margin-bottom: 20px; }
+  .entry:last-child { margin-bottom: 0; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+  .title { font-weight: 700; }
+  .date { font: 500 .85rem Inter, system-ui, sans-serif; color: var(--muted); white-space: nowrap; }
+  .org { font-style: italic; color: var(--muted); }
+  .detail { color: var(--muted); font-size: .95rem; }
+  ul { margin: 6px 0 0; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  .pubs { list-style: none; padding: 0; counter-reset: pub; }
+  .pubs li { position: relative; padding-left: 32px; margin-bottom: 12px; }
+  .pubs li::before {
+    counter-increment: pub; content: "[" counter(pub) "]";
+    position: absolute; left: 0; color: var(--muted); font: 500 .85rem/1.9 Inter, system-ui, sans-serif;
+  }
+  .me { font-weight: 700; }
+  .tag {
+    display: inline-block; font: 600 .7rem Inter, system-ui, sans-serif; letter-spacing: .05em; text-transform: uppercase;
+    color: var(--accent); background: var(--accent-soft); border-radius: 3px; padding: 1px 6px; margin-left: 6px; vertical-align: 2px;
+  }
+  .interests { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .interests span {
+    font: 500 .82rem Inter, system-ui, sans-serif; border: 1px solid var(--rule); border-radius: 999px; padding: 3px 12px;
+  }
+  .skills { display: grid; grid-template-columns: 200px 1fr; gap: 6px 16px; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; }
+  .refs { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  footer { margin-top: 36px; font: .78rem Inter, system-ui, sans-serif; color: var(--muted); text-align: center; }
+
+  @media (max-width: 700px) {
+    body { font-size: 16px; }
+    .page { margin: 0; padding: 28px 16px; border: 0; border-radius: 0; }
+    h1 { font-size: 1.9rem; }
+    .row { flex-direction: column; gap: 0; }
+    .skills, .refs { grid-template-columns: 1fr; }
+    .skills dt { margin-top: 6px; }
+  }
+  @media print {
+    :root { --bg:#fff; --paper:#fff; --ink:#000; --muted:#444; --rule:#ccc; --accent:#8c1d40; --accent-soft:#fff; }
+    body { font-size: 11pt; }
+    .page { margin: 0; padding: 0; border: 0; max-width: none; }
+    .actions, footer { display: none; }
+    section { break-inside: auto; } .entry { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <h1>Tamim Alam</h1>
+    <p class="role">PhD Student, Computer Science &middot; New Mexico State University</p>
+    <div class="contact">
+      <a href="mailto:tamim.alam.jim@gmail.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>tamim.alam.jim@gmail.com</a>
+      <a href="https://www.linkedin.com/in/tamim-alam/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18.3H5.7V9.7h2.6zM7 8.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm11.3 9.7h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2c.4-.7 1.2-1.4 2.5-1.4 2.7 0 3.2 1.8 3.2 4.1z"/></svg>LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=rWraJU4AAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9zM5 13.2v4L12 21l7-3.8v-4L12 17z"/></svg>Google Scholar</a>
+      <a href="https://github.com/talam1995" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>GitHub</a>
+      <a href="https://talam1995.github.io/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-3a15.7 15.7 0 0 0-1.3-3.6A8 8 0 0 1 18.9 8zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.4 1.1-2.8 1.9-4zM4.3 14a8 8 0 0 1 0-4h3.4a16.5 16.5 0 0 0 0 4zm.8 2h3c.3 1.3.8 2.5 1.3 3.6A8 8 0 0 1 5.1 16zm3-8h-3a8 8 0 0 1 4.3-3.6C8.9 5.5 8.4 6.7 8.1 8zM12 20c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.4-1.1 2.8-1.9 4zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4zm.3 5.6c.5-1.1 1-2.3 1.3-3.6h3a8 8 0 0 1-4.3 3.6zm1.7-5.6a16.5 16.5 0 0 0 0-4h3.4a8 8 0 0 1 0 4z"/></svg>Website</a>
+      <span style="color:var(--muted)"><svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor;vertical-align:-2px"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> Las Cruces, NM</span>
+    </div>
+    <div class="actions"><button onclick="window.print()">Download as PDF</button></div>
+  </header>
+
+  <section>
+    <h2>Research Interests</h2>
+    <p>I am a PhD student in Computer Science with a background in Statistics and Data Science. My research develops computational representations of complex populations through synthetic data generation, statistical modeling, causal inference, and simulation. I focus on building and validating reliable synthetic populations by integrating statistical and machine learning approaches to support data-driven analysis and decision-making.</p>
+    <div class="interests">
+      <span>Synthetic population generation</span><span>Statistical data synthesis</span><span>Causal inference</span>
+      <span>Computational simulation</span><span>Survey calibration &amp; validation</span><span>Order statistics &amp; prediction</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="row"><span class="title">Ph.D. in Computer Science</span><span class="date">Aug 2025 – Present</span></div>
+      <div class="org">New Mexico State University, Las Cruces, NM</div>
+      <div class="detail">Advisor: Dr. Amy E. Wagler</div>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="title">Ph.D. Studies in Interdisciplinary Health Sciences</span><span class="date">Jan 2025 – Aug 2025</span></div>
+      <div class="org">The University of Texas at El Paso, El Paso, TX</div>
+      <div class="detail">Advisor: Dr. Amy E. Wagler. Transferred to NMSU with advisor.</div>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="title">M.S. in Statistics and Data Science</span><span class="date">Jan 2023 – Dec 2024</span></div>
+      <div class="org">The University of Texas at El Paso, El Paso, TX</div>
+      <div class="detail">GPA: 3.91/4.00 &middot; Advisor: Dr. Ritwik Bhattacharya</div>
+      <div class="detail">Thesis: <a href="https://scholarworks.utep.edu/open_etd/4219/" target="_blank" rel="noopener"><em>D-Optimal Joint Best Linear Unbiased Predictors in Progressively Type-II Ordered Statistics</em></a></div>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="title">B.S. in Statistics</span><span class="date">Jan 2015 – Jul 2019</span></div>
+      <div class="org">University of Dhaka, Dhaka, Bangladesh</div>
+      <div class="detail">GPA: 3.42/4.00</div>
+      <div class="detail">Project: <em>A Study on the Increasing Divorce Rate in Bangladesh: Causes, Consequences and Remedies</em>. Designed the questionnaire, collected primary data, and used chi-square tests and logistic regression to identify determinants of divorce.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications &amp; Presentations</h2>
+    <ul class="pubs">
+      <li>Estrada, S., Tsai, C. L., Wong, L., &amp; <span class="me">Alam, T.</span> (2026). <em>Connecting the Dots: Exploring Statistics Education Research Themes.</em> Poster presented at the American Psychological Association (APA), Quantitative and Qualitative Methods Division. <span class="tag">Poster</span></li>
+      <li><span class="me">Alam, T.</span> (2024). <a href="https://scholarworks.utep.edu/open_etd/4219/" target="_blank" rel="noopener"><em>D-Optimal Joint Best Linear Unbiased Predictors in Progressively Type-II Ordered Statistics</em></a> [Master's thesis, The University of Texas at El Paso]. UTEP ScholarWorks. <span class="tag">Thesis</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Research Experience</h2>
+    <div class="entry">
+      <div class="row"><span class="title">Graduate Research Assistant</span><span class="date">Sep 2025 – Present</span></div>
+      <div class="org">Research Cores Program, New Mexico State University</div>
+      <ul>
+        <li>Conducting doctoral research on synthetic population generation and statistical data synthesis, integrating survey data with population-level information.</li>
+        <li>Applying calibration and validation techniques and evaluating how well synthetic populations preserve key statistical relationships.</li>
+        <li>Developing training guides and documentation for the Discovery HPC cluster to improve the experience of researchers across the university.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="title">PhD Research Associate</span><span class="date">Jan 2025 – Aug 2025</span></div>
+      <div class="org">The University of Texas at El Paso</div>
+      <ul>
+        <li><strong>GET PHIT</strong> (Gaining Equity in Training for Public Health Informatics and Technology): contributed to curriculum development, training modules, and outreach for public health informatics workforce development; mentored bootcamp student groups on their capstone projects.</li>
+        <li><strong>El Paso Water</strong> (Jun – Aug 2025): developed a data-driven risk classification model for the Kay Bailey Hutchison Desalination Plant, categorizing groundwater wells into low, medium, and high risk from water quality indicators to prioritize monitoring and early intervention.</li>
+        <li><strong>SIT2STAND</strong>: Validity in Stroke and Aging Populations in the Clinic and at Home. Analyzed sensor-based and clinical data to relate mobility metrics to functional outcomes and predictors of independent ambulation among older adults and stroke survivors.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="title">Master's Research Assistant</span><span class="date">Oct 2023 – Sep 2024</span></div>
+      <div class="org">NSF LEAPS-MPS: Prediction Issues in Progressively Censored Life-testing Experiments, UTEP</div>
+      <ul>
+        <li>Worked on D-optimal and simultaneous joint best linear unbiased prediction and joint best invariant prediction in progressively censored order statistics.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Teaching Experience</h2>
+    <div class="entry">
+      <div class="row"><span class="title">Graduate Teaching Assistant</span><span class="date">Jan 2023 – Sep 2023; Sep 2024 – Jan 2025</span></div>
+      <div class="org">Department of Mathematical Sciences, The University of Texas at El Paso</div>
+      <ul>
+        <li>Teaching Assistant for Matrix Algebra, Math in the Modern World, and Probability: supported instruction, student learning, and grading.</li>
+        <li>Instructor, Miner Math Jump Start workshops (Summer 2023 and 2024).</li>
+        <li>Tutor in mathematics and statistics at the MaRCS Tutoring Center.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <div class="entry">
+      <div class="row"><span class="title">Actuarial Associate</span><span class="date">Jul 2019 – Dec 2022</span></div>
+      <div class="org">Syngenta Foundation for Sustainable Agriculture, Bangladesh</div>
+      <ul>
+        <li>Led Weather Index Insurance (WII) product development with international consultants, partner organizations, and stakeholders; managed focus group studies.</li>
+        <li>Performed actuarial analysis for existing and new WII products; prepared premium schedules and claim and payout reports.</li>
+        <li>Extracted satellite weather data and managed data from Automated Weather Stations.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="title">Data Analyst</span><span class="date">May 2019 – Jun 2019</span></div>
+      <div class="org">All BD Research &amp; Development Group</div>
+      <ul>
+        <li>Led data analysis for the baseline study of <em>Strengthening Gender Equality and Social Inclusion in WASH in Bangladesh</em> (World Vision Bangladesh, funded by DFAT): questionnaire design, sample size, data cleaning, and bivariate and multivariate modeling.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Honors &amp; Awards</h2>
+    <ul>
+      <li>Academic and Research Excellence Award, The University of Texas at El Paso</li>
+      <li>Nominated for Best Thesis, College of Science, The University of Texas at El Paso</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Programming</dt><dd>R, Python, C</dd>
+      <dt>Statistical software</dt><dd>SPSS, Stata, TORA</dd>
+      <dt>Computing</dt><dd>High-performance computing (HPC cluster use and documentation)</dd>
+      <dt>Methods</dt><dd>Synthetic data generation, calibration, regression and classification, survey design, order statistics, optimal design</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <div class="refs">
+      <div><strong>Dr. Amy E. Wagler</strong><br><span class="detail">Director, Research Computing and Data Science<br>Research Cores Program, New Mexico State University<br><a href="mailto:awagler@nmsu.edu">awagler@nmsu.edu</a></span></div>
+      <div><strong>Dr. Ritwik Bhattacharya</strong><br><span class="detail">Assistant Professor, Department of Mathematical Sciences<br>The University of Texas at El Paso<br><a href="mailto:ritwik@utep.edu">ritwik@utep.edu</a></span></div>
+    </div>
+  </section>
+
+  <footer>Last updated September 2026</footer>
+</main>
+</body>
+</html>
