@@ -7,14 +7,14 @@ author_profile: true
 
 {% include base_path %}
 
+**Research interests:** population-level human digital twins, survey calibration, synthetic data, causal inference, and validation and uncertainty assessment.
+
 A printable version of this CV is available at [/resume/](/resume/).
 
 Education
 ======
 * **Ph.D. in Computer Science**, New Mexico State University, Aug 2025 – present
   * Advisor: Dr. Amy E. Wagler
-* **Ph.D. studies in Interdisciplinary Health Sciences**, The University of Texas at El Paso, Jan 2025 – Aug 2025
-  * Advisor: Dr. Amy E. Wagler (transferred to NMSU with advisor)
 * **M.S. in Statistics and Data Science**, The University of Texas at El Paso, Dec 2024
   * GPA: 3.91/4.00. Advisor: Dr. Ritwik Bhattacharya
   * Thesis: [*D-Optimal Joint Best Linear Unbiased Predictors in Progressively Type-II Ordered Statistics*](https://scholarworks.utep.edu/open_etd/4219/)
@@ -25,11 +25,10 @@ Education
 Research experience
 ======
 * **Graduate Research Assistant**, Research Cores Program, New Mexico State University, Sep 2025 – present
-  * Doctoral research on synthetic population generation and statistical data synthesis, integrating survey data with population-level information.
-  * Applying calibration and validation techniques and evaluating how well synthetic populations preserve key statistical relationships.
+  * Dissertation research on turning real-world survey data into reliable, privacy-preserving population-level representations for studying policy questions, drawing on survey calibration, synthetic data generation, causal modeling, and validation.
   * Developed training guides and documentation for the Discovery HPC cluster.
 
-* **PhD Research Associate**, The University of Texas at El Paso, Jan 2025 – Aug 2025
+* **Research Associate**, The University of Texas at El Paso, Jan 2025 – Aug 2025
   * *GET PHIT* (Gaining Equity in Training for Public Health Informatics and Technology): curriculum development, training modules, and outreach; mentored bootcamp students on capstone projects.
   * *El Paso Water* (Jun – Aug 2025): built a risk classification model for the Kay Bailey Hutchison Desalination Plant, grouping groundwater wells into low, medium, and high risk from water quality indicators.
   * *SIT2STAND: Validity in Stroke and Aging Populations in the Clinic and at Home*: analyzed sensor-based and clinical data linking mobility metrics to functional outcomes and independent ambulation.
@@ -68,7 +67,6 @@ Skills
 ======
 * **Programming:** R, Python, C
 * **Statistical software:** SPSS, Stata, TORA
-* **Computing:** High-performance computing (HPC)
 * **Methods:** Synthetic data generation, survey calibration, regression and classification, order statistics, optimal design
 
 References
