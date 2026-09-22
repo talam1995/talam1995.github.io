@@ -7,15 +7,16 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Computer Science at New Mexico State University, advised by [Dr. Amy E. Wagler](mailto:awagler@nmsu.edu), and a Graduate Research Assistant in the NMSU Research Cores Program. I build **Human and Social Digital Twins**: computational stand-ins for real populations that let us test policies and interventions before trying them in the world.
+I am a PhD student in Computer Science at New Mexico State University and a Graduate Research Assistant in the NMSU Research Cores Program. My work sits at the intersection of statistics and computing, with a focus on population-level human digital twins.
 
 ## Research
 
-A digital twin of a society is only as trustworthy as the population inside it. My doctoral research asks how to build synthetic populations from survey and population-level data that are faithful enough to answer causal questions. I approach this in three steps:
+My dissertation research explores how real-world survey data can be used to build reliable, population-level representations of people for studying policy questions. Broadly, the work involves:
 
-- **Build** the population through synthetic population generation and statistical data synthesis, using survey weighting and calibration to align individual-level microdata with population totals.
-- **Validate** it by testing whether the synthetic population preserves the statistical relationships that matter, not just the marginal distributions.
-- **Use** it by pairing structural causal models with agent-based modeling and LLM-based behavioral agents to simulate interventions inside the digital twin.
+- **Survey calibration:** adjusting survey samples so they better reflect the population they represent.
+- **Synthetic populations:** generating privacy-preserving synthetic data that retains key statistical relationships.
+- **Causal modeling:** using structural causal models to explore counterfactual "what-if" scenarios.
+- **Validation and uncertainty:** assessing how errors at each stage affect the reliability of the results.
 
 ## Background
 
