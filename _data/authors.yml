@@ -1,18 +1,11 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
+Tamim Alam:
+  name             : "Tamim Alam"
+  uri              : "https://talam1995.github.io"
+  email            : "talam@nmsu.edu"
+  bio              : "PhD student in Computer Science at New Mexico State University. My research interests include Human/Social Digital Twins, synthetic population generation, statistical data synthesis, survey calibration, and causal modeling."
+  avatar           : "bio-photo.jpg"
+  linkedin         : "tamim-alam"
+  github           : "talam1995"
 
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
